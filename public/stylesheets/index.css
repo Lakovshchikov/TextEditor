@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+  font-family: Arial;
+}
+.buttons_container{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.buttons{
+  height: 5rem;
+  display: inline-flex;
+}
+.button{
+  width: 15rem;
+  border: #423c6d solid 2px;
+  padding: 0 0 0 -4px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  user-select: none;
+}
+
+.button p{
+  font-size: 2rem;
+  margin: 0;
+}
+.button:hover{
+  box-shadow: 0px 0px 15px 7px rgba(255,255,255,0.79);
+}
+
+.button:active{
+  box-shadow: inset 0px 0px 5px 3px rgba(0,0,0,0.72);
+}
+article{
+  background-color: #d0e6fa;
+}
+.doc{
+  width: min-content;
+  height: min-content;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+
+textarea{
+  padding: 1rem;
+  outline: none;
+  border: aqua;
+  font-family: "Times New Roman";
+  font-size: 1.3rem;
+  box-shadow: #423c6d 0 0 10px;
+}
+
+.disable_elem{
+  display: none;
+  opacity: 0;
+}
+.enable_elem{
+  display: block;
+  opacity: 1;
+}
+embed{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  border: 0;
+}
+.btn_closePDF{
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: white;
+  z-index: 200;
+  position: absolute;
+  right: 3rem;
+  top:4rem;
+  text-decoration: none;
+  text-shadow:0px 1px 0px #fff;
+  border:1px solid #a7a7a7;
+  outline: 0;
+  outline-offset: 0;
+  -webkit-transition: 0.5s;
+}
+.btn_closePDF span::before,
+.btn_closePDF span::after{
+  position: absolute;
+  margin-top: -1px;
+  left: 50%;
+  margin-left: -15px;
+  top:50%;
+  width: 30px;
+  height: 2px;
+  background-color: #423c6d;
+}
+.btn_closePDF:hover{
+  box-shadow: 0px 0px 15px 7px rgba(255,255,255,0.79);
+}
+
+.btn_closePDF:active{
+  box-shadow: inset 0px 0px 15px 5px rgba(0,0,0,0.72);
+}
+.btn_closePDF span::before,
+.btn_closePDF span::after{
+  content: '';
+}
+.btn_closePDF span::before{
+  transform: translateY(-5px);
+  transform: rotate(45deg);
+}
+.btn_closePDF span::after{
+  transform: translateY(5px);
+  transform: rotate(-45deg);
+}
